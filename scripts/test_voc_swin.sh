@@ -1,0 +1,11 @@
+python ./test.py --datapath "../dataset" \
+                 --benchmark pascal \
+                 --fold 3 \
+                 --bsz 1 \
+                 --nworker 0 \
+                 --backbone swin \
+                 --feature_extractor_path "../backbone/swin_base_patch4_window12_384_22kto1k.pth" \
+                 --logpath "./logs" \
+                 --load "./logs/train/fold_3_0829_134755/best_model.pt" \
+                 --nshot 5 \
+                 --vispath "./vis_5/" \
